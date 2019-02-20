@@ -9,7 +9,7 @@ from pymatgen.entries.computed_entries import ComputedEntry
 entrada2 = [ComputedEntry("Li16Sn4S16", -150.73334384, -9.5)]
 
 # Obtain all existing Li-Fe-O phases using the Materials Project REST API
-with MPRester("Fvlb5EsNq71JxDy3") as m:
+with MPRester("key") as m:
     mp_entries = m.get_entries_in_chemsys(["Li", "Sn", "S"])
 
 # Process entries using the MaterialsProjectCompatibility
